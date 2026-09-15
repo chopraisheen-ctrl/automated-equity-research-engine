@@ -20,10 +20,11 @@ client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
 )
 
-SEC_HEADERS = {
-    "User-Agent": "FinanceProject1 IshaanChopra333@gmail.com"
-}
+SEC_EMAIL = os.getenv("SEC_EMAIL")
 
+SEC_HEADERS = {
+    "User-Agent": f"FinanceProject1 {SEC_EMAIL}"
+}
 
 # ============================================================
 # DCF ASSUMPTIONS
